@@ -20,6 +20,14 @@ import { AppService } from '../app.service';
         </li>
         <li>
           <a
+            routerLink="/pages/movies"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Films</a
+          >
+        </li>
+        <li>
+          <a
             routerLink="/admin/users"
             routerLinkActive="active"
             ariaCurrentWhenActive="page"

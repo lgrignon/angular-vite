@@ -1,23 +1,23 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { MoviesComponent } from "./movies/movies.component";
+import { UsersComponent } from "./users/users.component";
 
 export const appRouteList: Routes = [
 
     {
-        path: 'movies',
-        component: MoviesComponent
+        path: 'users',
+        component: UsersComponent
     },
     {
         path: '**',
-        redirectTo: 'types'
+        redirectTo: 'users'
     }
 ];
 
 @NgModule({
     declarations: [
-        MoviesComponent
+        UsersComponent
     ],
     imports: [
         CommonModule,
@@ -26,7 +26,7 @@ export const appRouteList: Routes = [
     bootstrap: [
     ],
     exports: [
-        MoviesComponent
+        UsersComponent
     ]
 })
-export class PagesModule { }
+export class AdminModule { }
